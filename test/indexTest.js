@@ -28,7 +28,7 @@ describe('Route', function() {
   let route;
 
   describe('blocksTravelled', function() {
-    it('calculates the number of blocksTravelled', function() {
+    it('calculates the number of vertical blocksTravelled', function() {
       let route = new Route({horizontal: 'Park', vertical: '34'}, {horizontal: 'Park', vertical: '45'})
       expect(route.blocksTravelled()).to.equal(11)
     })
